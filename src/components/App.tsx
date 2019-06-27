@@ -1,7 +1,7 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 
-import { Hello } from './Hello';
+import { ProjectsList } from './ProjectsList';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -9,11 +9,11 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const App: React.FunctionComponent = (): React.ReactElement => {
+export const App: React.FunctionComponent = () => {
   return (
     <>
       <GlobalStyle />
-      <Hello title="Hello Component" />
+      <ProjectsList />
     </>
-  )
+  );
 };

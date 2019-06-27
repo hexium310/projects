@@ -1,3 +1,13 @@
 - name: Twiterian
-  url: https://github.com/hexium310/twiterian
-  description: ""
+  repository: https://github.com/hexium310/twiterian
+  description: "Twitterに画像を投稿するためのクローム拡張"
+- name: brew-uo
+  repository: https://github.com/hexium310/brew-uo
+  description: "brew updateとbrew outdatedを連続実行するパッケージ"
+- name: bingo
+  url: https://hexium310.github.io/bingo
+  repository: https://github.com/hexium310/bingo
+  description: "抽選された数字を表示しておくビンゴ抽選機"
+- name: spotify-nowplaying
+  repository: https://github.com/hexium310/spotify-nowplaying
+  description: "Spotfiyで聞いている曲をTwitterに投稿するポップアップを表示するクローム拡張"
