@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/",
+    "typeRoots": ["./typings"],
     "sourceMap": true,
     "module": "esnext",
     "target": "es6",
@@ -20,6 +21,7 @@
     "node_modules"
   ],
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./typings"
   ]
 }

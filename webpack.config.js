@@ -5,6 +5,9 @@ const loaders = {
   typescript: {
     loader: 'ts-loader',
   },
+  yaml: {
+    loader: 'js-yaml-loader',
+  },
 };
 
 module.exports = {
@@ -19,6 +22,11 @@ module.exports = {
         test: /.tsx?$/,
         exclude: /node_modules/,
         use: loaders.typescript,
+      },
+      {
+        test: /.yaml$/,
+        exclude: /node_modules/,
+        use: loaders.yaml,
       },
     ],
   },
