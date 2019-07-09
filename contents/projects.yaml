@@ -11,3 +11,10 @@
 - name: spotify-nowplaying
   repository: https://github.com/hexium310/spotify-nowplaying
   description: "Spotfiyで聞いている曲をTwitterに投稿するポップアップを表示するクローム拡張"
+- name: Text-on-Webpage
+  repository: https://github.com/hexium310/text-on-webpage
+  description: "ウェブページ上に任意のテキストを表示させるクローム拡張"
+- name: custom-dashed-border
+  repository: https://github.com/hexium310/spotify-nowplaying
+  url: https://www.npmjs.com/package/custom-dashed-border
+  description: "間隔とかを調整できる破線のborderのReactコンポーネント。ここ枠で使ってる"
