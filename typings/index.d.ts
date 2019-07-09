@@ -1,6 +1,11 @@
 interface Project {
   name: string;
-  url: string;
-  repository?: string;
+  links?: ProjectLink[];
   description: string;
+}
+
+interface ProjectLink {
+  type: 'text' | 'github' | 'npm';
+  url: string;
+  text?: string;
 }

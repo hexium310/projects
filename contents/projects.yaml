@@ -1,20 +1,40 @@
 - name: Twiterian
-  repository: https://github.com/hexium310/twiterian
+  links:
+    - type: github
+      url: https://github.com/hexium310/twiterian
   description: "Twitterに画像を投稿するためのクローム拡張"
+
 - name: brew-uo
-  repository: https://github.com/hexium310/brew-uo
+  links:
+    - type: github
+      url: https://github.com/hexium310/brew-uo
   description: "brew updateとbrew outdatedを連続実行するパッケージ"
+
 - name: bingo
-  url: https://hexium310.github.io/bingo
-  repository: https://github.com/hexium310/bingo
+  links:
+    - type: text
+      url: https://hexium310.github.io/bingo
+      text: Demo
+    - type: github
+      url: https://github.com/hexium310/bingo
   description: "抽選された数字を表示しておくビンゴ抽選機"
+
 - name: spotify-nowplaying
-  repository: https://github.com/hexium310/spotify-nowplaying
+  links:
+    - type: github
+      url: https://github.com/hexium310/spotify-nowplaying
   description: "Spotfiyで聞いている曲をTwitterに投稿するポップアップを表示するクローム拡張"
+
 - name: Text-on-Webpage
-  repository: https://github.com/hexium310/text-on-webpage
+  links:
+    - type: github
+      url: https://github.com/hexium310/text-on-webpage
   description: "ウェブページ上に任意のテキストを表示させるクローム拡張"
+
 - name: custom-dashed-border
-  repository: https://github.com/hexium310/spotify-nowplaying
-  url: https://www.npmjs.com/package/custom-dashed-border
+  links:
+    - type: npm
+      url: https://www.npmjs.com/package/custom-dashed-border
+    - type: github
+      url: https://github.com/hexium310/spotify-nowplaying
   description: "間隔とかを調整できる破線のborderのReactコンポーネント。ここ枠で使ってる"

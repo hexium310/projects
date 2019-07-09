@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons';
 
 import { CustomDashedBorder } from 'custom-dashed-border';
 
@@ -23,28 +23,26 @@ const Links = styled.div`
   }
 `;
 
+const generateLink = (link: ProjectLink, index: number): React.ReactElement => {
+  const linkTexts = {
+    text: <>{ link.text || 'link' }</>,
+    github: <FontAwesomeIcon icon={ faGithub } />,
+    npm: <FontAwesomeIcon icon={ faNpm } />,
+  };
+
+  return <a key={ index } href={ link.url }>{ linkTexts[link.type] }</a>;
+};
+
 export const ProjectItem: React.FunctionComponent<ProjectItemProps> = ({ project }) => {
   return (
     <ItemContainer>
-      <CustomDashedBorder
-        top
-        right
-        bottom
-        left
-      >
+      <CustomDashedBorder top right bottom left>
         <Contents>
           <p>{ project.name }</p>
           <p>{ project.description }</p>
           <Links>
             {
-              project.url && <a href={ project.url }>{ project.name }</a>
-            }
-            {
-              project.repository && (
-                <a href={ project.repository }>
-                  <FontAwesomeIcon icon={ faGithub } />
-                </a>
-              )
+              project.links && project.links.map(generateLink)
             }
           </Links>
         </Contents>
