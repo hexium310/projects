@@ -10,7 +10,7 @@
       url: https://github.com/hexium310/brew-uo
   description: "brew updateとbrew outdatedを連続実行するパッケージ"
 
-- name: bingo
+- name: ビンゴ抽選機
   links:
     - type: text
       url: https://hexium310.github.io/bingo
@@ -37,4 +37,4 @@
       url: https://www.npmjs.com/package/custom-dashed-border
     - type: github
       url: https://github.com/hexium310/spotify-nowplaying
-  description: "間隔とかを調整できる破線のborderのReactコンポーネント。ここ枠で使ってる"
+  description: "間隔とかを調整できる破線のborderのReactコンポーネント。ここの枠で使ってる"
