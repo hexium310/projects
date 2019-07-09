@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import { CustomDashedBorder } from './CustomDashedBorder.tsx';
+import { CustomDashedBorder } from 'custom-dashed-border';
 
 interface ProjectItemProps {
   project: Project;
@@ -26,7 +26,12 @@ const Links = styled.div`
 export const ProjectItem: React.FunctionComponent<ProjectItemProps> = ({ project }) => {
   return (
     <ItemContainer>
-      <CustomDashedBorder>
+      <CustomDashedBorder
+        top
+        right
+        bottom
+        left
+      >
         <Contents>
           <p>{ project.name }</p>
           <p>{ project.description }</p>
