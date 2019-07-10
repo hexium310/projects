@@ -15,6 +15,12 @@ const ItemContainer = styled.div`
 
 const Contents = styled.div`
   margin: 10px;
+  font-family: 'Lato' , 'Noto Sans JP', sans-serif;
+`;
+
+const Name = styled.h3`
+  font-family: 'Dosis', 'Noto Sans JP', fantasy;
+  font-weight: bold;
 `;
 
 const Links = styled.div`
@@ -38,7 +44,7 @@ export const ProjectItem: React.FunctionComponent<ProjectItemProps> = ({ project
     <ItemContainer>
       <CustomDashedBorder top right bottom left>
         <Contents>
-          <p>{ project.name }</p>
+          <Name>{ project.name }</Name>
           <p>{ project.description }</p>
           <Links>
             {

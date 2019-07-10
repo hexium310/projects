@@ -6,6 +6,7 @@ import projects from '../../contents/projects.yaml';
 
 const Title = styled.h2`
   text-align: center;
+  font-family: 'Dosis', fantasy;
 `;
 
 const ProjectsContainer = styled.div`
