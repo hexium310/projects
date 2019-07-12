@@ -32,8 +32,8 @@ const Links = styled.div`
 const generateLink = (link: ProjectLink, index: number): React.ReactElement => {
   const linkTexts = {
     text: <>{ link.text || 'link' }</>,
-    github: <FontAwesomeIcon icon={ faGithub } />,
-    npm: <FontAwesomeIcon icon={ faNpm } />,
+    github: <FontAwesomeIcon icon={ faGithub } size='lg' />,
+    npm: <FontAwesomeIcon icon={ faNpm } size='lg' />,
   };
 
   return <a key={ index } href={ link.url }>{ linkTexts[link.type] }</a>;
