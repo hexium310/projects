@@ -14,6 +14,7 @@ export const App: React.FunctionComponent = () => {
     <>
       <GlobalStyle />
       <ProjectsList />
+      <Header />
     </>
   );
 };
