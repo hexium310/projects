@@ -3,12 +3,14 @@
     - type: github
       url: https://github.com/hexium310/twiterian
   description: "Twitterに画像を投稿するためのクローム拡張"
+  detail_file: twiterian.md
 
 - name: brew-uo
   links:
     - type: github
       url: https://github.com/hexium310/brew-uo
   description: "brew updateとbrew outdatedを連続実行するパッケージ"
+  detail_file: brew-uo.md
 
 - name: ビンゴ抽選機
   links:
@@ -18,18 +20,21 @@
     - type: github
       url: https://github.com/hexium310/bingo
   description: "抽選された数字を表示しておくビンゴ抽選機"
+  detail_file: bingo.md
 
 - name: spotify-nowplaying
   links:
     - type: github
       url: https://github.com/hexium310/spotify-nowplaying
   description: "Spotfiyで聞いている曲をTwitterに投稿するポップアップを表示するクローム拡張"
+  detail_file: spotify-nowplaying.md
 
 - name: Text-on-Webpage
   links:
     - type: github
       url: https://github.com/hexium310/text-on-webpage
   description: "ウェブページ上に任意のテキストを表示させるクローム拡張"
+  detail_file: text-on-webpage.md
 
 - name: custom-dashed-border
   links:
@@ -38,3 +43,4 @@
     - type: github
       url: https://github.com/hexium310/spotify-nowplaying
   description: "間隔とかを調整できる破線のborderのReactコンポーネント。ここの枠で使ってる"
+  detail_file: custom-dashed-border.md

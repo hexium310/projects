@@ -1,16 +1,18 @@
 import React from 'react';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faNpm } from '@fortawesome/free-brands-svg-icons';
 
 import { CustomDashedBorder } from 'custom-dashed-border';
 
-interface ProjectItemProps {
+interface ProjectItemProps extends RouteComponentProps {
   project: Project;
 }
 
 const ItemContainer = styled.div`
   position: relative;
+  cursor: pointer;
 `;
 
 const Contents = styled.div`
@@ -39,9 +41,16 @@ const generateLink = (link: ProjectLink, index: number): React.ReactElement => {
   return <a key={ index } href={ link.url }>{ linkTexts[link.type] }</a>;
 };
 
-export const ProjectItem: React.FunctionComponent<ProjectItemProps> = ({ project }) => {
+const Item: React.FunctionComponent<ProjectItemProps> = ({ project, history }) => {
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>): void => {
+    if (['a', 'svg', 'path'].includes((event.target as HTMLElement).nodeName)) {
+      return;
+    }
+    history.push(`/${project.name}`);
+  };
+
   return (
-    <ItemContainer>
+    <ItemContainer onClick={ (e) => handleClick(e) }>
       <CustomDashedBorder top right bottom left>
         <Contents>
           <Name>{ project.name }</Name>
@@ -56,3 +65,5 @@ export const ProjectItem: React.FunctionComponent<ProjectItemProps> = ({ project
     </ItemContainer>
   );
 };
+
+export const ProjectItem = withRouter(Item);
