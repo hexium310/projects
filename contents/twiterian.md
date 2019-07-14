@@ -1,6 +1,7 @@
-# Twiterian
+# [Twiterian](https://github.com/hexium310/twiterian)
 
 TwiterianはTwitterに画像つきでツイートできるChrome拡張機能です。
+Chrome ウェブストアにはそのうち登録します。
 
 ![twiterian-popup](../contents/images/twiterian-popup.png)
 
