@@ -1,4 +1,4 @@
-# [spotify-nowplaying](https:/github.com/hexium310/spotify-nowplaying)
+# [spotify-nowplaying](https://github.com/hexium310/spotify-nowplaying)
 
 Spotifyで再生中の音楽をTwitterに投稿するためのポップアップを表示するChrome拡張機能です。  
 再生中にアイコンをクリックすると曲名、アーティスト名、SpotifyのURL、#NowPlyingのハッシュタグを
