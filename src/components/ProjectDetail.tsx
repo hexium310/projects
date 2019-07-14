@@ -13,10 +13,29 @@ const MarkdownWrapper = styled.div`
 
 const Content = styled.div`
   width: 70%;
+  font-size: 16px;
+
+  h1, h2 {
+    border-bottom: 1px solid #eaecef;
+    padding-bottom: 0.3em;
+  }
+
+  h1 {
+    a {
+      text-decoration: none;
+    }
+  }
 
   img {
     width: 100%;
     border: solid 1px black;
+  }
+
+  code {
+    background-color: rgba(27,31,35,.05);
+    font-size: 85%;
+    margin: 0;
+    padding: 0.2em 0.4em;
   }
 `;
 
