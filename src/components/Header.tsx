@@ -10,7 +10,7 @@ const HeaderContainer = styled.div`
   align-items: center;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   grid-column: 2 / 3;
   text-align: center;
   font-family: 'Dosis', fantasy;
