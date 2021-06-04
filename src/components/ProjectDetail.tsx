@@ -61,7 +61,7 @@ export const ProjectDetail: React.FunctionComponent<RouteComponentProps<{ id: st
   return (
     <MarkdownWrapper>
       <Content>
-        <ReactMarkdown source={ markdownText } />
+        <ReactMarkdown>{ markdownText }</ReactMarkdown>
         <Link to='/'>Projects</Link>
       </Content>
     </MarkdownWrapper>
